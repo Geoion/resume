@@ -1,0 +1,107 @@
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,article]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv 主题
+\moderncvstyle{casual}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
+\moderncvcolor{black}                         % 选项参数是 blue(默认)、orange、green、red、purple、grey、black
+%\nopagenumbers{}                             % 消除注释以取消自动页码生成功能
+
+% 字符编码
+%\usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
+\setmainfont{SimSun}
+
+% 调整页面边距
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{3cm}
+
+% 个人信息
+\name{陈}{成}
+%\title{简历题目}                     		% 可选项、如不需要可删除本行
+%\address{街道及门牌号}{邮编及城市}         % 可选项、如不需要可删除本行
+\phone[mobile]{+86~185~2022~2024}           % 可选项、如不需要可删除本行
+%\phone[fixed]{+2~(345)~678~901}            % 可选项、如不需要可删除本行
+%\phone[fax]{+3~(456)~789~012}              % 可选项、如不需要可删除本行
+\email{chenfjm@gmail.com}                   % 可选项、如不需要可删除本行
+\homepage{chencheng.sn.cn}                  % 可选项、如不需要可删除本行
+\social[github]{chenfjm}
+\social[linkedin]{chenfjm}
+%\extrainfo{附加信息 (可选项)}                 % 可选项、如不需要可删除本行
+%\photo[64pt][0.4pt]{picture}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\begin{document}
+\makecvfooter								  % cvfooter,cvtitle,title,footer
+
+\section{基本信息}
+\cvdoubleitem{姓~~~~名}{\small 陈成}{家庭地址}{\small 陕西省延安市}
+\cvdoubleitem{性~~~~别}{\small 男}{出生日期}{\small 1990-03-03}
+~\\
+\cvdoubleitem{学~~~~校}{\small 西安理工大学}{专~~~~业}{\small 计算机科学与技术}
+\cvdoubleitem{学~~~~历}{\small 学士}{毕业时间}{\small 2013-07}
+\cvdoubleitem{求职意向}{\small 软件开发}{工作地点}{\small 北京}
+
+\section{专业技能}
+\cvitem{编程语言}{\small C,C++,Python}
+\cvitem{开发工具}{\small git,svn,gvim,cmake,gcc/g++,gdb,pdb,doxygen,visio}
+\cvitem{第三方库}{\small boost,libevent,django,webpy,duilib}
+\cvitem{}{\small 分析过Linux内核代码,深刻理解操作系统基本原理,熟练使用嵌入式Linux开发
+	相关工具。熟悉面向对象,网络编程,并发编程,三年Linux使用经验。}
+
+\section{工作经验}
+\cvdoubleitem{时~~~~间}{\small 2013.02-2014.07}{公司名称}{\small 广州致远电子有限公司}
+\cvitem{职位名称}{\small 软件研发工程师}
+
+\section{项目经验}
+
+\subsection{方圆电器能效测量系统}
+\cvitem{项目时间}{\small 2014.03-2014.07}
+\cvitem{项目描述}{\small 实时读取测量设备的数据完成电器功耗的计算与波形的显示,并导出测量报告。}
+\cvitem{责任描述}{\small 根据客户提出的需求独立完成软件的设计与实现。}
+
+\subsection{功率分析仪客户端管理软件}
+\cvitem{项目时间}{\small 2013.07-2014.02}
+\cvitem{项目描述}{\small 功率分析仪的辅助软件,帮助客户在PC端操作功率分析仪,并对分析的数据进行
+行业分析、显示、导出报表等操作。}
+\cvitem{责任描述}{\small 通过vba方式实现office报表模块。}
+
+\subsection{基于wince平台的DirectUI界面库实现}
+\cvitem{项目时间}{2013.02-2013.05}
+\cvitem{项目描述}{\small 根据xml描述实现界面的绘制,将用户界面与业务逻辑分离。}
+\cvitem{责任描述}{\small 独立完成项目的需求、设计、编码实现、测试。}
+
+\subsection{停车位搜索系统}
+\cvitem{项目时间}{\small 2012.07-2012.09}
+\cvitem{项目描述}{\small 通过zigbee无线传感器网络收集停车场的车位信息并上传到服务器,用户通过移
+动终端与服务器通信来查找周围空闲的停车位。}
+\cvitem{责任描述}{\small 调研需求,项目的整体规划与设计,部分模块的实现。}
+\cvitem{项目成果}{\small 实用新型专利一项,软件著作权一项。}
+%\renewcommand{\listitemsymbol}{-}             % 改变列表符号
+
+% 来自BibTeX文件但不使用multibib包的出版物
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+
+% 来自BibTeX文件并使用multibib包的出版物
+%\section{出版物}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+
+\end{document}
+
+
+%% 文件结尾 `template-zh.tex'.
