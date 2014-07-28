@@ -1,10 +1,23 @@
-default: chen-cn.pdf chen-en.pdf
+#makefile build resume files 
+
+all: chen-cn.pdf
+
+install: 
+
+	apt-get -y install texlive  
+	apt-get -y install texlive-latex-extra  
+	apt-get -y install texlive-xetex
+	apt-get -y install texlive-fonts-extra  
+
+remove:
+
+	apt-get -y remove texlive  
+	apt-get -y remove texlive-latex-extra  
+	apt-get -y remove texlive-xetex
+	apt-get -y remove texlive-fonts-extra  
 
 chen-cn.pdf: chen-cn.tex
 	xelatex $^
 
-chen-en.pdf: chen-en.tex
-	xelatex $^ 
-
 clean:
-	rm -rf *.aux *.out *.log
+	rm -rf *.aux *.out *.log 
