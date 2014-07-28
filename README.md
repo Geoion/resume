@@ -1,4 +1,4 @@
-##安装  
+###安装  
 
 1. 安装texlive:   
 
@@ -16,10 +16,10 @@
 
 	apt-get install texlive-fonts-extra  
 
-##使用  
-
-- 编译：  
+###使用  
 
 	make  
 	make clean  
+	make install
+	make remove
 
