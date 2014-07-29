@@ -1,25 +1,20 @@
+###软件  
+
+- [texlive](http://tug.org/texlive/)   
+- [moderncv](http://www.ctan.org/pkg/moderncv)   
+- [xelatex](http://tug.org/xetex/)  
+- [fontawesome](http://www.ctan.org/tex-archive/fonts/fontawesome)   
+
 ###安装  
+	
+	make install  
 
-1. 安装texlive:   
+###卸载   
 
-	apt-get install texlive   
-
-2. 安装moderncv:   
-
-	apt-get install texlive-latex-extra   
-
-3. 安装xelatex:  
-
-	apt-get install texlive-xetex   
-
-4. 安装fontawesome:   
-
-	apt-get install texlive-fonts-extra    
+	make remove  
 
 ###使用  
 
 	make  
-	make clean  
-	make install
-	make remove
-
+	make clean   
+ 
