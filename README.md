@@ -20,4 +20,4 @@
  
 ### for MAC OS X  
 
-- [MacTex](http://http://tug.org/mactex/)
+- [MacTex](http://tug.org/mactex/)
