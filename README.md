@@ -18,3 +18,6 @@
 	make  
 	make clean   
  
+### for MAC OS X  
+
+- [MacTex](http://http://tug.org/mactex/)
