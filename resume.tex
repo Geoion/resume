@@ -3,7 +3,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,article]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,a4paper,article]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv 主题
 \moderncvstyle{casual}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
@@ -16,6 +16,7 @@
 % 调整页面边距
 \usepackage[scale=0.8]{geometry}
 \setlength{\hintscolumnwidth}{3cm}
+
 
 % 个人信息
 \name{陈}{成}
@@ -37,51 +38,57 @@
 \begin{document}
 \makecvfooter								  % cvfooter,cvtitle,title,footer
 
-\section{基本信息}
+\section{\large 基本信息}
 \cvdoubleitem{姓~~~~名}{\small 陈成}{家庭地址}{\small 陕西省延安市}
 \cvdoubleitem{性~~~~别}{\small 男}{出生日期}{\small 1990-03-03}
 \cvdoubleitem{学~~~~校}{\small 西安理工大学}{毕业时间}{\small 2013-07}
 \cvdoubleitem{学~~~~历}{\small 学士}{求职意向}{\small Python开发}
 \cvdoubleitem{专~~~~业}{\small 计算机科学与技术}{工作地点}{\small 北京}
 
-\section{专业技能}
+\section{\large 专业技能}
 \cvitem{编程语言}{\small Python,C,C++,html,javascript,css}
 \cvitem{开发工具}{\small git,svn,vim,docker,Grunt,cmake,gcc/g++,gdb,pdb,doxygen,visio}
 \cvitem{开源技术}{\small Tornado,webpy,Django,thrift,MongoDB,Redis,Mysql,jQuery,Bootstrap,libevent}
 \cvitem{}{\small 对阅读源码有浓厚的兴趣,深刻理解操作系统基本原理,熟练使用Linux开发相关工具。
         熟悉面向对象,网络编程,并发编程,对Web开发有较深刻的认识。}
 
-\section{工作经历}
+\section{\large 工作经历}
 \subsection{\small 2013.02-2014.07, 广州致远电子有限公司，C/C++软件研发工程师}
 \subsection{\small 2014.08-现在, 北京钱方银通科技有限公司，Python开发工程师}
 
-\section{项目经验}
+\section{\large 项目经验}
 \vspace{3pt}
-\subsection{本地云商城}
-\cvitem{项目时间}{\small 2014.11-2015.07}
-\cvitem{项目描述}{\small 本地云商城是帮助商家在微信上搭建微信商城的平台,提供店铺、商品、订单、		物流、支付、消息和客户管理等模块,同时还提供丰富的营销活动功能。}
-\cvitem{责任描述}{\small 数据库设计、后端接口，部分前端页面。}
+\subsection{\normalsize 快服务}
+\cvitem{项目时间}{\small 2015.4-2015.08}
+\cvitem{项目描述}{\small 快服务为消费者提供30分钟送货上门服务，满足消费者想要就要的即时性需求。
+为本地商家提供移动电商和即时配送服务，帮助商家把业务扩展到全城区域。}
+\cvitem{责任描述}{\small 后端接口，部分前端页面。}
 
 \vspace{3pt}
-\subsection{功率分析仪客户端管理软件}
+\subsection{\normalsize 本地云商城}
+\cvitem{项目时间}{\small 2014.11-2015.07}
+\cvitem{项目描述}{\small 本地云商城是帮助商家在微信上搭建微信商城的平台,提供店铺、商品、订单、		物流、支付、消息和客户管理等模块,同时还提供丰富的营销活动功能。}
+\cvitem{责任描述}{\small 系统整体设计、Server端实现，部分前端页面。}
+
+\vspace{3pt}
+\subsection{\normalsize 功率分析仪客户端管理软件}
 \cvitem{项目时间}{\small 2013.12-2014.07}
 \cvitem{项目描述}{\small 功率分析仪的辅助软件,帮助客户在PC端操作功率分析仪,并对测试数据进行分
 		析、显示、导出报表等操作。}
 \cvitem{责任描述}{\small 网络通信模块、报表模块。}
 
 \vspace{3pt}
-\subsection{基于wince平台的DirectUI界面库实现}
+\subsection{\normalsize 基于wince平台的DirectUI界面库实现}
 \cvitem{项目时间}{2013.07-2013.11}
 \cvitem{项目描述}{\small 根据xml描述实现界面的绘制,将用户界面与业务逻辑分离。}
 \cvitem{责任描述}{\small 项目的需求、设计、编码实现、测试。}
 
 \vspace{3pt}
-\subsection{停车位搜索系统}
+\subsection{\normalsize 停车位搜索系统}
 \cvitem{项目时间}{\small 2013.02-2013.06}
 \cvitem{项目描述}{\small 通过zigbee和GPRS无线网络将停车场的空闲车位信息上传到服务器,用户通过手
-		机与服务器通信来查找周围空闲的停车位。}
+		机与服务器通信来查找周围空闲的停车位。获得专利、软件著作权各一项。}
 \cvitem{责任描述}{\small 项目的整体规划与设计,后端系统的实现。}
-\cvitem{项目成果}{\small 实用新型专利一项,软件著作权一项。}
 
 %\renewcommand{\listitemsymbol}{-}             % 改变列表符号
 
